@@ -1,0 +1,25 @@
+
+  list-product works!
+
+  <br><br>
+  <table border="1">
+    <thead>
+      <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Short Desc</th>
+          <th>Long Desc</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor='let item of products'>
+          <td>{{ item.Product.productNo }}</td>
+          <td>{{ item.Product.name }}</td>
+          <td>{{ item.Product.longDescription }}</td>
+          <td>{{ item.Product.shortDescription }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+<br><br>
+<p><i>list of products fetched from product service</i></p>
